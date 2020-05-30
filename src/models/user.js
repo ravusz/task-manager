@@ -47,6 +47,9 @@ const userSchema = new mongoose.Schema({
 			require: true
 		}
 	}]
+}, {
+	//Add createAt and updatedAt
+	timestamps: true
 });
 
 //virtual relation, not creation field inside document 
